@@ -49,8 +49,7 @@ function Page() {
         resolve();
         return;
       }
-      axios
-        .get(`http://164.90.161.80:3000/api/content?dirId=${key}`, {
+      axios.get(`http://164.90.161.80:3000/api/content?dirId=${key}`, {
           cancelToken: cancelTokenSource.token,
         })
         .then(
